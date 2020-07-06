@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="SimpleInjector" Version="4.4.3" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc" Version="4.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RM.BaseArchitecture.Api.Proxy\RM.BaseArchitecture.Api.Proxy.csproj" />
+    <ProjectReference Include="..\RM.BaseArchitecture.Infrastructure.CrossCutting.Bootstrapper\RM.BaseArchitecture.Infrastructure.CrossCutting.Bootstrapper.csproj" />
+  </ItemGroup>
+
+</Project>

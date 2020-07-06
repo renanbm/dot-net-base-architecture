@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RM.BaseArchitecture.Api.Proxy\RM.BaseArchitecture.Api.Proxy.csproj" />
+    <ProjectReference Include="..\RM.BaseArchitecture.Application\RM.BaseArchitecture.Application.csproj" />
+    <ProjectReference Include="..\RM.BaseArchitecture.Infrastructure.Data\RM.BaseArchitecture.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
+</Project>
